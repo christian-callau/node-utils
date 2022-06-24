@@ -1,0 +1,41 @@
+{
+  "name": "@christian-callau/node-utils",
+  "version": "1.0.0",
+  "description": "A collection of node and express validation and error handling utils",
+  "main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+  "scripts": {
+		"build": "rimraf dist && tsc",
+		"prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christian-callau/node-utils.git"
+  },
+  "keywords": [],
+  "author": {
+		"name": "Christian Callau",
+		"email": "ch.callau@gmail.com"
+	},
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/christian-callau/node-utils/issues"
+  },
+  "homepage": "https://github.com/christian-callau/node-utils#readme",
+	"devDependencies": {
+		"@types/cors": "^2.8.12",
+		"@types/express": "^4.17.13",
+		"@types/node": "^18.0.0",
+		"rimraf": "^3.0.2",
+		"typescript": "^4.7.4"
+	},
+	"dependencies": {
+		"@sentry/node": "^7.3.0",
+		"cors": "^2.8.5",
+		"fastest-validator": "^1.12.0",
+		"helmet": "^5.1.0"
+	}
+}
